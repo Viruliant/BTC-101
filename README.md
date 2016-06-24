@@ -1,20 +1,19 @@
-# Github Pages Template
+# BTC-101
+_________
 
-______________
+Code@[github.com/Viruliant/BTC-101](http://github.com/Viruliant/BTC-101)  
 
-Code@[github.com/Viruliant/gh-template](http://github.com/Viruliant/gh-template)  
-Demo@[viruliant.github.io/gh-template](http://viruliant.github.io/gh-template)
+Bitcoin is a protocol on how to send BTC between Account Numbers(aka public address number). Each Account Number has a corresponding Account Signature Keys(aka private key number). "You have the private key number you have the money." --AAntonopoulos
 
-This is a template to allow you to do almost anything, including on your own server. Just use [NodeJS](http://nodejs.org/) and the included `gh-template-node.js` file
+At the heart of bitcoin is Transactions - messages consisting of receiving Account Numbers and how much to send to each one, the remaining unspent funds are the transaction fee. A VALID Pending Transaction needs to have an Account Key signature that matches an public Account Numbers with enough funds in it. Multisig Accounts require multiple signatures.
 
-The built in Github markdown displayer won't allow stuff like:
+Once a VALID Pending Transaction is broadcast to the WWW all the miners are constantly using difficulty adjusted dice(aka checksuming with an incrementing nonce added to checksum input to roll again) until they get a low enough roll() to win the block reward(some bitcoins) by securing the block which adds all the current pending transactions(together as a checksum secured block) into the Master Secured Ledger of ALL BTC Transactions of all time(blockchain).
 
-* embed mathjax code like this:
-$$$e^x =\lim_{n\to\infty}\left(1+\frac{x}{n}\right)^{n} = \sum_{n=0}^{\infty} \left( \frac{x^n}{n!} \right) = \frac{x^n}{0!} + \frac{x^n}{1!} + \frac{x^n}{2!} + \frac{x^n}{3!} + \text{⋅ ⋅ ⋅}$$$
-* embed youtube videos like this:
+The Signature algorithm works similar to the RSA encryption algorithm in the video below:
+
 <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src=
-"//www.youtube.com/embed/vtLLdtBQBoI?list=PLjgrsP5Vg40lWLyr1whakzuDsmGW0el0y&loop=1&autoplay=1"
+"//www.youtube.com/embed/IY8BXNFgnyI?list=PLjgrsP5Vg40mVUj2cmzUyb6Ik1IiCj8P9&loop=1&autoplay=1"
 frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-* [SVG Parameters](http://www.w3.org/TR/SVGParamPrimer) code like this:
-<object type="image/svg+xml" data="gh-pages-rsrcs/map.svg?x=320&y=290"></object>
+
+[Here is how to do a RSA signature instead of encryption.](http://crypto.stackexchange.com/a/9897)
 
