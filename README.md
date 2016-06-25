@@ -6,7 +6,7 @@ Code@[github.com/Viruliant/BTC-101](http://github.com/Viruliant/BTC-101)
 __________
 ##Accounts
 
-Bitcoin is a protocol on how to send BTC between Account Numbers(aka public address number). Each Account Number has a corresponding Account Signature Keys(aka private key number). "You have the private key number you have the money." --AAntonopoulos
+Bitcoin is a protocol on how to send BTC between Account Numbers(aka public address number). Each Account Number has a corresponding Account Signature Keys(aka private key number). "You have the private key number you have the money." --AAntonopoulos in a JRE interview
 
 Address Reuse(Using a single account # for all transactions) is VERY dangerous, because anyone you trade with would see a complete history of the finances of a single address. You need to use an HD Account that has rolling Account Numbers(addresses) none of which exceeding a certain value.
 
@@ -23,6 +23,10 @@ Transactions cannot take place without valid signatures, The DSA-Signature algor
 [Here is how to do a RSA signature instead of encryption.](http://crypto.stackexchange.com/a/9897)
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src=
-"//www.youtube.com/embed/IY8BXNFgnyI?list=PLjgrsP5Vg40mVUj2cmzUyb6Ik1IiCj8P9&loop=1&autoplay=1"
+"//www.youtube.com/embed/IY8BXNFgnyI?list=PLjgrsP5Vg40mVUj2cmzUyb6Ik1IiCj8P9&loop=1&autoplay=0"
 frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
+___
+##Debit Cards
+For dealing with traditional money with BTC:  
+For use in the US [Here is my Shameless Coinbase Plug(we each get $10 if you make an account at that link an buy over $100usd worth of btc from them)](https://www.coinbase.com/join/57537a120dd5607fe400025a)
